@@ -88,13 +88,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &kp F7     &kp F8     &kp F9    &sys_reset
+           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans   &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT    &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &kp F10    &kp F11    &kp F12   &bootloader
+          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans  &kp K_MUTE  &kp K_VOL_DN  &kp K_VOL_UP  &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &kp F1     &kp F2     &trans    &trans
+            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
